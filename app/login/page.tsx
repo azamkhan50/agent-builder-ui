@@ -107,14 +107,20 @@ export default function LoginPage() {
         </div>
 
         {/* Submit Button */}
-      <button
+        {/* <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-[#6750a4] text-white py-2 rounded-lg hover:bg-[#7a63c5] transition"
+        >
+          {loading ? "Loading..." : "Continue"}
+        </button> */}
+<button
   type="submit"
   disabled={loading}
-  className="w-full bg-[#6750a4] text-white py-2 rounded-lg hover:bg-[#7a63c5] transition"
+  className="w-full bg-[#6750a4] text-white py-2 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed"
 >
   {loading ? "Loading..." : "Continue"}
 </button>
-
 
         {/* Signup Link */}
         <p className="text-center text-sm mt-3">
@@ -122,7 +128,7 @@ export default function LoginPage() {
           <button
             type="button"
             onClick={() => router.push("/signup")}
-            className="text-blue-600 hover:underline"
+            className="text-[#6750a4] hover:underline"
           >
             Sign Up
           </button>

@@ -222,7 +222,7 @@ export default function SignUpPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full  bg-[#6750a4] text-white py-2 rounded-lg hover: bg-[#6750a4] transition disabled:bg-blue-300"
+          className="w-full  bg-[#6750a4] text-white py-2 rounded-lg hover: bg-[#6750a4] transition disabled:bg-[#6954a3] "
         >
           {loading ? "Signing up..." : "Continue"}
         </button>
@@ -233,7 +233,7 @@ export default function SignUpPage() {
           <button
             type="button"
             onClick={() => router.push("/login")}
-            className="text-blue-600 hover:underline"
+            className="text-[#6750a4] hover:underline"
           >
             Login
           </button>
