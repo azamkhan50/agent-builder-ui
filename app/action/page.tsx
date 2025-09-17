@@ -77,11 +77,12 @@ export default function ActionPage() {
         <h1 className="text-xl font-bold"></h1>
         <button
           onClick={() => router.push("/action/createaction")}
-          className="px-3 py-1 bg-blue-600 text-white rounded-md hover:bg-blue-700 flex items-center gap-1"
+          className="px-3 py-1  bg-purple-700 text-white rounded-md hover:bg-purple-800 flex items-center gap-1"
         >
           <Plus className="w-4 h-4" /> Add Action
         </button>
       </div>
+     
 
       {/* Search + Filter Row */}
       <div className="flex gap-3 mb-4">
